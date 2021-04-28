@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeroContainer, HeroGrid, HeroImgWrapper, HeroImg, HeroTextWrapper, HeroSubHeader, HeroHeader, HeroDetails, ProductPrice, ProductButton, HeroOffer} from './HeroSectionElements';
 import headphones from '../../images/studio3wireless.png';
-
+import "../../components/buttons/buttons.css"
 const HeroSection = () => {
   return (
     <HeroContainer>

@@ -47,18 +47,20 @@ export const HeroHeader = styled.h1`
 
 `
 export const HeroDetails = styled.div`
-
+height: auto;
 `
 export const ProductPrice = styled.h6`
   font-size: 40px;
   font-weight: 400;
   color: white; 
   display: inline-block;
-  margin: 0;
+  margin: 0 2vw 0 0 ;
+
+
 `
 export const ProductButton = styled.button`
 display: inline-block;
-float: right;
+
 `
 export const HeroOffer = styled.p`
   font-size: 13px;
