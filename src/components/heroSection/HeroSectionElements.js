@@ -46,6 +46,30 @@ export const HeroHeader = styled.h1`
   color: #FFFFFF;
 
 `
+export const HeroColors = styled.div`
+
+`
+
+export const ColorHeader = styled.h3`
+
+`
+export const FindColor = styled.p`
+
+`
+export const ColorOptions = styled.div`
+
+`
+export const ColorOption1 = styled.div`
+
+`
+export const ColorOption2 = styled.div`
+
+`
+export const ColorOption3 = styled.div`
+
+`
+
+
 export const HeroDetails = styled.div`
 height: auto;
 `
