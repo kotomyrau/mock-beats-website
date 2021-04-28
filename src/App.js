@@ -1,21 +1,22 @@
 import './App.css';
-import Footer from './components/footer';
-import HeroSection from './components/heroSection';
-import { heroPage1, heroPage2 } from './components/heroSection/Data';
-import NavBar from './components/navBar';
-import Newsletter from './components/newsletterSection';
-import ProductPage from './components/productPage/ProductPage';
+import Home from './pages';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import HeadphonesPage from './pages/headphones';
+import EarphonesPage from './pages/earphones';
+import SpeakersPage from './pages/speakers';
+import ExplorePage from './pages/explore';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <HeroSection {...heroPage1}/>
-      <HeroSection {...heroPage2}/>
-      <ProductPage/>
-      <Newsletter/>
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={ Home } exact />
+        <Route path="/headphones" component={ HeadphonesPage } exact />
+        <Route path="/earphones" component={ EarphonesPage } exact />
+        <Route path="/speakers" component={ SpeakersPage } exact />
+        <Route path="/explore" component={ ExplorePage } exact />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
