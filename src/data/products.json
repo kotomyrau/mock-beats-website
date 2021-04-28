@@ -6,7 +6,7 @@
       "image": "images/product0.png",
       "features": [
         {
-          "battery-life": "Up to 8 hours of battery life", 
+          "battery": "Up to 8 hours of battery life", 
           "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
         }
       ]
@@ -19,7 +19,7 @@
       "image": "images/product1.png",
       "features": [
         {
-          "battery-life": "Up to 8 hours of battery life", 
+          "battery": "Up to 8 hours of battery life", 
           "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
         }
       ]
@@ -32,7 +32,7 @@
       "image": "images/product2.png",
       "features": [
         {
-          "battery-life": "Up to 8 hours of battery life", 
+          "battery": "Up to 8 hours of battery life", 
           "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
         }
       ]
@@ -45,7 +45,7 @@
       "image": "images/product3.png",
       "features": [
         {
-          "battery-life": "Up to 8 hours of battery life", 
+          "battery": "Up to 8 hours of battery life", 
           "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
         }
       ]
@@ -58,7 +58,7 @@
       "image": "images/product4.png",
       "features": [
         {
-          "battery-life": "Up to 8 hours of battery life", 
+          "battery": "Up to 8 hours of battery life", 
           "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
         }
       ]
@@ -70,7 +70,7 @@
       "image": "images/product5.png",
       "features": [
         {
-          "battery-life": "Up to 8 hours of battery life", 
+          "battery": "Up to 8 hours of battery life", 
           "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
         }
       ]
