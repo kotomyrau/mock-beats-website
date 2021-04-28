@@ -60,3 +60,7 @@ export const FooterLink = styled.a`
   text-decoration: none;
   line-height: 1.8;
 `
+
+export const SocialMediaLink = styled.a` 
+
+`

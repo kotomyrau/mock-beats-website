@@ -1,6 +1,7 @@
 import React from 'react'
-import { FooterContainer, FooterGrid, FooterLogo, FooterImg, SiteMapProducts, SiteMapSupport, SiteMapCompany, FooterSocials, FooterHeader, FooterLink} from './FooterElements'
+import { FooterContainer, FooterGrid, FooterLogo, FooterImg, SiteMapProducts, SiteMapSupport, SiteMapCompany, FooterSocials, FooterHeader, FooterLink, SocialMediaLink} from './FooterElements'
 import logo from "../../images/logo.png";
+import { FaInstagram, FaFacebookF, FaTwitter, FaWhatsapp} from 'react-icons/fa';
 const Footer = () => {
   return (
     <FooterContainer>
@@ -42,6 +43,11 @@ const Footer = () => {
         </SiteMapCompany>
         <FooterSocials>
         <FooterHeader>Follow Us</FooterHeader>
+        <SocialMediaLink href="#" target='blank'><FaInstagram /></SocialMediaLink>
+        <SocialMediaLink href="#" target='blank'><FaFacebookF /></SocialMediaLink>
+        <SocialMediaLink href="#" target='blank'><FaTwitter /></SocialMediaLink>
+        <SocialMediaLink href="#" target='blank'><FaWhatsapp /></SocialMediaLink>
+
         </FooterSocials>
       </FooterGrid>
     </FooterContainer>
