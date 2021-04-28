@@ -20,8 +20,8 @@ const Footer = () => {
             <FooterLink  href="#">special offers</FooterLink>
         </SiteMapProducts>
         <SiteMapSupport>
-        <FooterHeader>Support</FooterHeader>
-        <FooterLink  href="#">headphones</FooterLink>
+          <FooterHeader>Support</FooterHeader>
+            <FooterLink  href="#">headphones</FooterLink>
             <FooterLink  href="#">product help</FooterLink>
             <FooterLink  href="#">service & warranty</FooterLink>
             <FooterLink  href="#">register your beats</FooterLink>
@@ -29,11 +29,10 @@ const Footer = () => {
             <FooterLink  href="#">authorized service providers</FooterLink>
             <FooterLink  href="#">contact support</FooterLink>
             <FooterLink  href="#">international numbers</FooterLink>
-
         </SiteMapSupport>
         <SiteMapCompany>
-        <FooterHeader>Company</FooterHeader>
-        <FooterLink  href="#">product help</FooterLink>
+          <FooterHeader>Company</FooterHeader>
+            <FooterLink  href="#">product help</FooterLink>
             <FooterLink  href="#">news and events</FooterLink>
             <FooterLink  href="#">promotion terms</FooterLink>
             <FooterLink  href="#">privacy policy</FooterLink>
@@ -42,12 +41,11 @@ const Footer = () => {
             <FooterLink  href="#">cookies</FooterLink>
         </SiteMapCompany>
         <FooterSocials>
-        <FooterHeader>Follow Us</FooterHeader>
-        <SocialMediaLink><a href="#" target='blank'/><FaInstagram /></SocialMediaLink>
-        <SocialMediaLink>< a href="#" target='blank'/><FaFacebookF /></SocialMediaLink>
-        <SocialMediaLink><a href="#" target='blank'/><FaTwitter /></SocialMediaLink>
-        <SocialMediaLink ><a href="#" target='blank'/><FaWhatsapp /></SocialMediaLink>
-
+          <FooterHeader>Follow Us</FooterHeader>
+            <SocialMediaLink><a href="#" target='blank'/><FaInstagram /></SocialMediaLink>
+            <SocialMediaLink>< a href="#" target='blank'/><FaFacebookF /></SocialMediaLink>
+            <SocialMediaLink><a href="#" target='blank'/><FaTwitter /></SocialMediaLink>
+            <SocialMediaLink ><a href="#" target='blank'/><FaWhatsapp /></SocialMediaLink>
         </FooterSocials>
       </FooterGrid>
     </FooterContainer>
