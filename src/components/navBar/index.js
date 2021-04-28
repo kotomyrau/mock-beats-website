@@ -17,7 +17,7 @@ const NavBar = () => {
             <NavLink to="/headphones">headphones</NavLink>
           </NavItem> 
           <NavItem>
-            <NavLink to="#/earphones">earphones</NavLink>
+            <NavLink to="/earphones">earphones</NavLink>
           </NavItem> 
           <NavItem>
             <NavLink to="/speakers">speakers</NavLink>
