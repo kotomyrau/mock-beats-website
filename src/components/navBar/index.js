@@ -1,13 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Nav, NavContainer, NavLogo, Img, NavMenu, NavItem, NavLink, NavIcons, IconImg } from './NavBarElements'
 import logo from "../../images/logo.png";
 import search from "../../images/search.png";
 import profile from "../../images/profile.png";
 import buy from "../../images/buy.png";
+import { animateScroll as scroll } from 'react-scroll';
 
 const NavBar = () => {
+  const [scrollNav, setScrollNav] = useState(false)
+
+  const changeNav = () => {
+    if(window.scrollY >= 10) {
+      setScrollNav(true)
+    } else {
+      setScrollNav(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav)
+  }, [])
+
   return (
-    <Nav>
+    <Nav scrollNav={scrollNav}>
       <NavContainer>
         <NavLogo>
           <Img src={logo} alt="beats logo"/>
