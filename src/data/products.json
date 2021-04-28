@@ -1,0 +1,128 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Beats Studio3 Wireless",
+      "description": null,
+      "price": "299.95",
+      "image": "images/studio3wireless.png",
+      "features": [
+        {
+          "battery-life": null, 
+          "power": null 
+        }
+      ],
+      "colors": [],
+      "offer": "$60 Apple Music gift card with purchase of select Beats products.*"
+    }, 
+    {
+      "id": 1,
+      "name": "Beats Pill",
+      "description": "Portable Wireless Speaker",
+      "price": "299.95",
+      "image": "images/pill.png",
+      "features": [
+        {
+          "battery-life": null, 
+          "power": null 
+        }
+      ],
+      "colors": ["#FFFFFF", "#DD5656", "#000000"],
+      "offer": "$60 Apple Music gift card with purchase of select Beats products.*"
+    },
+    {
+      "id": 2,
+      "name": "Beatsˣ",
+      "description": null,
+      "price": "299.95",
+      "image": "images/product0.png",
+      "features": [
+        {
+          "battery-life": "Up to 8 hours of battery life", 
+          "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
+        }
+      ],
+      "colors": [],
+      "offer": null
+    },
+
+    {
+      "id": 3,
+      "name": "Beatsˣ",
+      "description": null,
+      "price": "199.95",
+      "image": "images/product1.png",
+      "features": [
+        {
+          "battery-life": "Up to 8 hours of battery life", 
+          "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
+        }
+      ],
+      "colors": [],
+      "offer": null
+    },
+
+    {
+      "id": 4,
+      "name": "Beatsˣ",
+      "description": null,
+      "price": "199.95",
+      "image": "images/product2.png",
+      "features": [
+        {
+          "battery-life": "Up to 8 hours of battery life", 
+          "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
+        }
+      ],
+      "colors": [],
+      "offer": null
+    },
+
+    {
+      "id": 5,
+      "name": "Beatsˣ",
+      "description": null,
+      "price": "999.95",
+      "image": "images/product3.png",
+      "features": [
+        {
+          "battery-life": "Up to 8 hours of battery life", 
+          "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
+        }
+      ],
+      "colors": [],
+      "offer": null
+    },
+
+    {
+      "id": 6,
+      "name": "Beatsˣ",
+      "description": null,
+      "price": "99.95",
+      "image": "images/product4.png",
+      "features": [
+        {
+          "battery-life": "Up to 8 hours of battery life", 
+          "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
+        }
+      ],
+      "colors": [],
+      "offer": null
+    },
+    {
+      "id": 7,
+      "name": "Beatsˣ",
+      "description": null,
+      "price": "299.95",
+      "image": "images/product5.png",
+      "features": [
+        {
+          "battery-life": "Up to 8 hours of battery life", 
+          "power": "With Fast Fuel, a 5-minute charge = 2 hours of playback" 
+        }
+      ],
+      "colors": [],
+      "offer": null
+    }
+  ]
+}
