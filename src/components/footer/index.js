@@ -43,10 +43,10 @@ const Footer = () => {
         </SiteMapCompany>
         <FooterSocials>
         <FooterHeader>Follow Us</FooterHeader>
-        <SocialMediaLink href="#" target='blank'><FaInstagram /></SocialMediaLink>
-        <SocialMediaLink href="#" target='blank'><FaFacebookF /></SocialMediaLink>
-        <SocialMediaLink href="#" target='blank'><FaTwitter /></SocialMediaLink>
-        <SocialMediaLink href="#" target='blank'><FaWhatsapp /></SocialMediaLink>
+        <SocialMediaLink><a href="#" target='blank'/><FaInstagram /></SocialMediaLink>
+        <SocialMediaLink>< a href="#" target='blank'/><FaFacebookF /></SocialMediaLink>
+        <SocialMediaLink><a href="#" target='blank'/><FaTwitter /></SocialMediaLink>
+        <SocialMediaLink ><a href="#" target='blank'/><FaWhatsapp /></SocialMediaLink>
 
         </FooterSocials>
       </FooterGrid>

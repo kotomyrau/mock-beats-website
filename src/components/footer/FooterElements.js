@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const FooterContainer = styled.div`
 height: auto;
 background-color: #2B2835;
-padding: 4vh 10vw;
+padding: 8vh 10vw 4vh;
 `
 
 export const FooterGrid = styled.div`
@@ -25,21 +25,25 @@ export const FooterImg = styled.img`
 export const SiteMapProducts = styled.ul`
 grid-area: col2;
 // background-color: orange;
+margin: 0;
 `
 
 export const SiteMapSupport = styled.ul`
 grid-area: col3;
 // background-color: yellow;
+margin: 0;
 `
 
 export const SiteMapCompany = styled.ul`
 grid-area: col4;  
 // background-color: blue;
+margin: 0;
 `
 
 export const FooterSocials = styled.ul`
 grid-area: col5;
-background-color: green;
+// background-color: green;
+margin: 0;
 `
 
 
@@ -47,7 +51,7 @@ export const FooterHeader = styled.h6`
 font-weight: 600;
 font-size: 24px;
 color: #FFFFFF;
-margin: 0;
+margin: 0 0 2vh; 
 `
 
 export const FooterLink = styled.a` 
@@ -61,6 +65,16 @@ export const FooterLink = styled.a`
   line-height: 1.8;
 `
 
-export const SocialMediaLink = styled.a` 
-
+export const SocialMediaLink = styled.div` 
+  background-color: #FFFFFF;
+  margin: 24px 16px 0 0;
+  border-radius: 50px;
+  height: 30px;
+  padding: 5px;
+  width: 30px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
 `
+
