@@ -13,8 +13,9 @@ export const HeroGrid = styled.div`
   grid-template-areas: 
     "img text"
     ;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+  height: 100%;
 
 `
 
@@ -26,29 +27,41 @@ export const HeroImgWrapper = styled.div`
 export const HeroImg = styled.img`
   // background-color: red;
   height: 99vh;
-  // position: absolute;
+  position: absolute;
   top: 0;
   z-index: 0;
 `
 export const HeroTextWrapper = styled.div`
   grid-area: text;
-  margin: auto 8vw auto 0;
+  margin: auto 8vw auto 6vw;
 `
 export const HeroSubHeader = styled.h3`
-
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
 `
 export const HeroHeader = styled.h1`
+  font-weight: bold;
+  font-size: 40px;
+  color: #FFFFFF;
 
 `
-export const HeroDetails = styled.h6`
+export const HeroDetails = styled.div`
 
 `
 export const ProductPrice = styled.h6`
-
+  font-size: 40px;
+  font-weight: 400;
+  color: white; 
+  display: inline-block;
+  margin: 0;
 `
-export const ProductButton = styled.div`
-
+export const ProductButton = styled.button`
+display: inline-block;
+float: right;
 `
 export const HeroOffer = styled.p`
-
+  font-size: 13px;
+  color: #FFC700;
+  font-weight: 500;
 `

@@ -13,10 +13,10 @@ const HeroSection = () => {
       {/* COLUMN 2 */}
       <HeroTextWrapper>
         <HeroSubHeader>Beats Studio3 Wireless</HeroSubHeader>
-        <HeroHeader>Experience your music like never before.</HeroHeader>
+        <HeroHeader>Experience your <br/>music like never before.</HeroHeader>
         <HeroDetails>
         <ProductPrice>$299.95</ProductPrice>
-        <ProductButton>buy now</ProductButton>
+        <ProductButton className="buy-btn">buy now</ProductButton>
         </HeroDetails>
       <HeroOffer>$60 Apple Music gift card with purchase of select Beats products.*</HeroOffer>
       </HeroTextWrapper>
