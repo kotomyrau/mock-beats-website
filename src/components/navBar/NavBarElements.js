@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
-  background-color: rgba(25, 23, 32, 0.3);
+  background: ${({ scrollNav }) => (scrollNav ? '#2B2835' : 'rgba(25, 23, 32, 0.3)')};
   height: auto;
   position: sticky;
   top: 0;
@@ -34,7 +34,8 @@ export const NavItem = styled.div`
 export const NavLink = styled(Link)`
   color: #FFFFFF;
   font-size: 15px;
-  font-weight: medium;
+  font-weight: 500;
+  text-decoration: none;
   text-transform: uppercase;
 `
 export const NavIcons = styled.div`
