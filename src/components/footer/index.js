@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterContainer, FooterGrid, FooterLogo, FooterImg, SiteMapProducts, SiteMapSupport, SiteMapCompany, FooterSocials } from './FooterElements'
+import { FooterContainer, FooterGrid, FooterLogo, FooterImg, SiteMapProducts, SiteMapSupport, SiteMapCompany, FooterSocials, FooterHeader, FooterLink} from './FooterElements'
 import logo from "../../images/logo.png";
 const Footer = () => {
   return (
@@ -9,16 +9,39 @@ const Footer = () => {
           <FooterImg src={logo} alt="beats logo"/>        
         </FooterLogo>
         <SiteMapProducts>
-          products
+          <FooterHeader>Products</FooterHeader>
+            <FooterLink  href="#">headphones</FooterLink>
+            <FooterLink  href="#">earphones</FooterLink>
+            <FooterLink  href="#">speakers</FooterLink>
+            <FooterLink  href="#">accessories</FooterLink>
+            <FooterLink  href="#">collaborations</FooterLink>
+            <FooterLink  href="#">beatsaudio</FooterLink>
+            <FooterLink  href="#">special offers</FooterLink>
         </SiteMapProducts>
         <SiteMapSupport>
-          support
+        <FooterHeader>Support</FooterHeader>
+        <FooterLink  href="#">headphones</FooterLink>
+            <FooterLink  href="#">product help</FooterLink>
+            <FooterLink  href="#">service & warranty</FooterLink>
+            <FooterLink  href="#">register your beats</FooterLink>
+            <FooterLink  href="#">update your beats</FooterLink>
+            <FooterLink  href="#">authorized service providers</FooterLink>
+            <FooterLink  href="#">contact support</FooterLink>
+            <FooterLink  href="#">international numbers</FooterLink>
+
         </SiteMapSupport>
         <SiteMapCompany>
-          company
+        <FooterHeader>Company</FooterHeader>
+        <FooterLink  href="#">product help</FooterLink>
+            <FooterLink  href="#">news and events</FooterLink>
+            <FooterLink  href="#">promotion terms</FooterLink>
+            <FooterLink  href="#">privacy policy</FooterLink>
+            <FooterLink  href="#">trademark</FooterLink>
+            <FooterLink  href="#">terms of use</FooterLink>
+            <FooterLink  href="#">cookies</FooterLink>
         </SiteMapCompany>
         <FooterSocials>
-          links
+        <FooterHeader>Follow Us</FooterHeader>
         </FooterSocials>
       </FooterGrid>
     </FooterContainer>
