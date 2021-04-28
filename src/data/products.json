@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Beatsˣ",
       "price": "299.95",
-      "image": "images/product0.png",
+      "image": "./images/product0.png",
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 
