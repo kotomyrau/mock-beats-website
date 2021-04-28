@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './components/footer';
 import HeroSection from './components/heroSection';
 import { heroPage1, heroPage2 } from './components/heroSection/Data';
 import NavBar from './components/navBar';
@@ -13,6 +14,7 @@ function App() {
       <HeroSection {...heroPage2}/>
       <ProductPage/>
       <Newsletter/>
+      <Footer/>
     </div>
   );
 }
