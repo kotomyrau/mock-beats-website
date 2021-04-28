@@ -1,9 +1,11 @@
 import './App.css';
-import ProductPage from './components/ProductPage';
+import NavBar from './components/navBar';
+import ProductPage from './components/productPage/ProductPage';
 
 function App() {
   return (
     <div className="App">
+      <NavBar/>
       <ProductPage/>
     </div>
   );
