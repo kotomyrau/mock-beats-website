@@ -2,32 +2,32 @@ import React from 'react';
 import { HeroContainer, HeroGrid, HeroImgWrapper, HeroImg, HeroTextWrapper, HeroSubHeader, HeroHeader, HeroColors, ColorHeader, FindColor, ColorOptions, ColorOption1, ColorOption2, ColorOption3, HeroDetails, ProductPrice, ProductButton, HeroOffer} from './HeroSectionElements';
 import headphones from '../../images/studio3wireless.png';
 import "../../components/buttons/buttons.css"
-const HeroSection = () => {
+const HeroSection = ({id, leftImg, darkBg, img, lightText, width, header, subHeader, colorHeader, findColor, colorOptions, productPrice, productOffer}) => {
   return (
-    <HeroContainer>
+    <HeroContainer id={id} darkBg={darkBg} lightText={lightText}>
       <HeroGrid>
       {/* COLUMN 1 */}
-      <HeroImgWrapper>
-        <HeroImg src={headphones} alt="black beats headphones"/>
+      <HeroImgWrapper leftImg={leftImg}>
+        <HeroImg leftImg={leftImg} src={img} alt="black beats headphones" width={width} />
       </HeroImgWrapper>
       {/* COLUMN 2 */}
-      <HeroTextWrapper>
-        <HeroSubHeader>Beats Studio3 Wireless</HeroSubHeader>
-        <HeroHeader>Experience your <br/>music like never before.</HeroHeader>
+      <HeroTextWrapper lightText={lightText} leftImg={leftImg}>
+        <HeroSubHeader>{subHeader}</HeroSubHeader>
+        <HeroHeader darkBg={darkBg}>{header}</HeroHeader>
         <HeroColors> 
-          <ColorHeader></ColorHeader>
-          <FindColor></FindColor>
-          <ColorOptions>
+          <ColorHeader>{colorHeader}</ColorHeader>
+          <FindColor>{findColor}</FindColor>
+          <ColorOptions colorOptions={colorOptions}>
             <ColorOption1/>
             <ColorOption2/>
             <ColorOption3/>
           </ColorOptions>
         </HeroColors>
         <HeroDetails>
-        <ProductPrice>$299.95</ProductPrice>
+        <ProductPrice>${productPrice}</ProductPrice>
         <ProductButton className="buy-btn">buy now</ProductButton>
         </HeroDetails>
-      <HeroOffer>$60 Apple Music gift card with purchase of select Beats products.*</HeroOffer>
+      <HeroOffer darkBg={darkBg}> {productOffer}</HeroOffer>
       </HeroTextWrapper>
       </HeroGrid>
     </HeroContainer>
