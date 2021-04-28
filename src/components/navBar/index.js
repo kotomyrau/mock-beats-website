@@ -14,16 +14,16 @@ const NavBar = () => {
         </NavLogo>
         <NavMenu> 
           <NavItem>
-            <NavLink to="#">headphones</NavLink>
+            <NavLink to="/headphones">headphones</NavLink>
           </NavItem> 
           <NavItem>
-            <NavLink to="#">earphones</NavLink>
+            <NavLink to="#/earphones">earphones</NavLink>
           </NavItem> 
           <NavItem>
-            <NavLink to="#">speakers</NavLink>
+            <NavLink to="/speakers">speakers</NavLink>
           </NavItem> 
           <NavItem>
-            <NavLink to="#">explore</NavLink>
+            <NavLink to="/explore">explore</NavLink>
           </NavItem> 
         </NavMenu>
         <NavIcons>

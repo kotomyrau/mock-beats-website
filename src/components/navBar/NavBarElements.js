@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
   background-color: rgba(25, 23, 32, 0.3);
@@ -30,7 +31,7 @@ export const NavItem = styled.div`
   display: inline-block;
   margin: 0 4vw;
 `
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   color: #FFFFFF;
   font-size: 15px;
   font-weight: medium;
