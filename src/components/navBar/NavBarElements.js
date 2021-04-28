@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const Nav = styled.nav`
-  background-color: rgba(25, 23, 32, 0.8);
-  box-shadow: 0px 0px 4px 2px #808080;
+  background-color: rgba(25, 23, 32, 0.3);
   height: auto;
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 999;
 `
 export const NavContainer = styled.div`
   display: flex;
