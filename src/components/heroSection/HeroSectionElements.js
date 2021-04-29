@@ -1,15 +1,16 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-  background-color: ${({darkBg}) => (darkBg ? '#2B2835' : 'none')};
-  // // height: 80vh;
-  // // z-index: 0;
-  // // top: ${({darkBg}) => (darkBg ? '-78px;' : '0vh')};
-  // // position: relative;
+// // height: 80vh;
+// // z-index: 0;
+// // top: ${({darkBg}) => (darkBg ? '-78px;' : '0vh')};
+// // position: relative;
 
-  position: relative;
-  top: -78px;
+  background-color: ${({darkBg}) => (darkBg ? '#2B2835' : 'none')};
   display: flex;
+  flex-direction: ${({leftImg}) => (leftImg ? 'row' : 'row-reverse')};
+  position: relative;
+  top: ${({leftImg}) => (leftImg ? '-78px' : '0')};
 `
 
 export const HeroGrid = styled.div`
@@ -30,10 +31,10 @@ export const HeroImgWrapper = styled.div`
   // margin: ${({leftImg}) => (leftImg ? '0' : 'auto 0')};
 
 
-  width: 50vw;
+  width: ${({leftImg}) => (leftImg ? '65vw' : '50vw')};
   display: inline-block;
-  margin-bottom: -10%;
-  `
+  margin: ${({leftImg}) => (leftImg ? '0 0 -10% 0' : '20vh 6vw 0 0')};
+`
 
 
 export const HeroImg = styled.img`
@@ -51,16 +52,15 @@ export const HeroImg = styled.img`
 export const HeroTextWrapper = styled.div`
   // // grid-area: text;
   // grid-area: ${({leftImg}) => (leftImg ? 'col2' : 'col1')};
-  // color:  ${({lightText}) => (lightText ? '#FFFFFF' : '#2B2835')};
   // margin: auto 0vw auto 0vw;
   // padding: 0 0 0vh;
   // // text-align: left;
-
-  color: #FFFFFF;
-    margin: auto 0vw auto 0vw;
+  
+  color:  ${({lightText}) => (lightText ? '#FFFFFF' : '#2B2835')};
+    margin: ${({leftImg}) => (leftImg ? 'auto 0vw auto -10vw' : '20vh 0vw 4vh 6vw')};
     padding: 0 0 0vh;
     display: inline-block;
-    width: 50vw;
+    width: 35vw;
   `
   export const HeroSubHeader = styled.h3`
   font-weight: 500;

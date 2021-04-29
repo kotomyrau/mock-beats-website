@@ -36,7 +36,7 @@ const HeroSection = ({id, leftImg, darkBg, img, lightText, width, header, subHea
 
 //////////////////////////////////////////
 return (
-  <HeroContainer id={id} darkBg={darkBg} lightText={lightText}>
+  <HeroContainer id={id} darkBg={darkBg} lightText={lightText} leftImg={leftImg}>
     <HeroImgWrapper leftImg={leftImg}>
       <HeroImg leftImg={leftImg} src={img} alt="black beats headphones" width={width} />
     </HeroImgWrapper>
