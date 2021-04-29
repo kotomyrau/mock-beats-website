@@ -46,3 +46,15 @@ export const IconImg = styled.img`
   padding: 0 18px;
   height: 20px;
 `
+
+export const NavToggleIcon = styled.div`
+  display: none;
+    
+  @media screen and (max-width: 768px) {
+    display: inline-block;
+    color: #FFFFFF;
+    float: right;
+    font-size: 4vh;
+    cursor: pointer;
+  }
+`

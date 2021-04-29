@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { Nav, NavContainer, NavLogo, Img, NavMenu, NavItem, NavLink, NavIcons, IconImg } from './NavBarElements'
+import { Nav, NavContainer, NavToggleIcon, NavLogo, Img, NavMenu, NavItem, NavLink, NavIcons, IconImg } from './NavBarElements'
 import logo from "../../images/logo.png";
 import search from "../../images/search.png";
 import profile from "../../images/profile.png";
 import buy from "../../images/buy.png";
-import { animateScroll as scroll } from 'react-scroll';
+import {FaBars} from 'react-icons/fa';
+// import { animateScroll as scroll } from 'react-scroll';
 
-const NavBar = () => {
+const NavBar = (toggle) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
@@ -27,6 +28,9 @@ const NavBar = () => {
         <NavLogo>
           <Img src={logo} alt="beats logo"/>
         </NavLogo>
+        <NavToggleIcon scrollNav={scrollNav}>
+              <FaBars onClick={toggle} />
+        </NavToggleIcon>
         <NavMenu> 
           <NavItem>
             <NavLink to="/headphones">headphones</NavLink>
