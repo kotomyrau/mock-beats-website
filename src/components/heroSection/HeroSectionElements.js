@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-  background-color: ${({leftImg}) => (leftImg ? '#2B2835' : '#FFFFFF')};
+  background-color: ${({leftImg}) => (leftImg ? '#2B2835' : 'transparent')};
   display: flex;
   flex-direction: ${({leftImg}) => (leftImg ? 'row' : 'row-reverse')};
   position: relative;
@@ -19,7 +19,7 @@ export const HeroImgWrapper = styled.div`
   width: ${({leftImg}) => (leftImg ? '60vw' : '50vw')};
   @media screen and (max-width: 768px) {
     width: 100vw;
-    background-color: ${({leftImg}) => (leftImg ? '#2B2835' : '#FFFFFF')};
+    background-color: ${({leftImg}) => (leftImg ? '#2B2835' : 'transparent')};
     padding: 0 4vw;
     margin: auto 0;
   }
@@ -35,10 +35,9 @@ export const HeroTextWrapper = styled.div`
   color:  ${({leftImg}) => (leftImg ? '#FFFFFF' : '#2B2835')};
   display: inline-block;
   margin: ${({leftImg}) => (leftImg ? 'auto 0vw auto -10vw' : '20vh 0vw 4vh 6vw')};
-  padding: 0 0 0vh;
+  padding: ${({leftImg}) => (leftImg ? '90px 0px;' : '0')};
   width: 45vw;
   @media screen and (max-width: 1024px) {
-    // margin: ${({leftImg}) => (leftImg ? 'auto 0vw auto -10vw' : '20vh 0vw 4vh 6vw')};
     width: 55vw;
   }
   @media screen and (max-width: 768px) {
