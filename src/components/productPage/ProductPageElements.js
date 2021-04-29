@@ -12,6 +12,7 @@ export const ProductsGridContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     background: red;
+    margin: 0 6vw;
 `
 export const ProductCard = styled.div`
 grid-area: product;
@@ -36,4 +37,6 @@ export const ProductPrice = styled.h6`
 color: #9D8220;
 font-weight: 600;
 font-size: 25px;
+display: inline-block;
+margin-right: 4vw;
 `
