@@ -8,6 +8,9 @@ export const Nav = styled.nav`
   top: 0;
   width: 100%;
   z-index: 999;
+  @media screen and (max-width: 1024px) {
+    background: ${({ scrollNav }) => (scrollNav ? '#2B2835' : 'transparent')};
+  }
 `
 export const NavContainer = styled.div`
   display: flex;
@@ -17,6 +20,7 @@ export const NavContainer = styled.div`
   `
   
 export const NavLogo = styled.div`
+  cursor: pointer;
   margin: auto 0;
 `
 export const Img = styled.img`
@@ -54,8 +58,9 @@ export const NavIcons = styled.div`
   }`
 
 export const IconImg = styled.img`
-  padding: 0 1vw;
+  cursor: pointer;
   height: 20px;
+  padding: 0 1vw;
 `
 
 export const NavToggleIcon = styled.div`

@@ -13,4 +13,7 @@ button {
   height: 41px;
   text-transform: uppercase;
   width: 145px;
+  @media screen and (max-width: 1024px) {
+    height: 36px;
+  }
 }
