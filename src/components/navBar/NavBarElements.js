@@ -58,10 +58,10 @@ export const NavToggleIcon = styled.div`
   display: none;
     
   @media screen and (max-width: 768px) {
-    display: inline-block;
     color: #FFFFFF;
-    float: right;
-    font-size: 4vh;
     cursor: pointer;
+    display: inline-block;
+    font-size: 4vh;
+    margin: auto 0;
   }
 `
