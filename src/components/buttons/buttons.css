@@ -2,6 +2,7 @@
   background-color: #FFC700;
   color: #000000;
 }
+
 button {
   background-color: #000000;
   border: none;
@@ -13,8 +14,18 @@ button {
   height: 41px;
   text-transform: uppercase;
   width: 145px;
-  @media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1024px) {
+  button {
     height: 36px;
     width: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero2 button {
+    background-color: #FFC700;
+    color: #000000;
   }
 }

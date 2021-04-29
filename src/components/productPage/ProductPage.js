@@ -62,18 +62,6 @@ class ProductPage extends React.Component {
             })}
         </ProductsGridContainer>
       </ProductsContainer>
-        // <div>
-        //   <ul>
-        //     {products.map(product => (
-        //       <li key={product.id}>
-        //         Name: {product.name}<br/>
-        //         Price: {product.price}<br/>
-        //         Image: {product.image}<br/>
-        //         <img src={product.image}/>
-        //       </li>
-        //     ))}
-        //   </ul>
-        // </div>
       );
     }
   }

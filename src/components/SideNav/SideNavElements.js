@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom'
 
 export const SideNav = styled.aside`
   position: fixed;
@@ -34,7 +35,7 @@ export const SideNavMenu = styled.div`
 export const SideNavItem = styled.div`
   margin: 8vh 0;
 ` 
-export const SideNavLink = styled.a`
+export const SideNavLink = styled(Link)`
   color: #FFFFFF;
   font-size: 15px;
   font-weight: 500;

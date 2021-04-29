@@ -59,7 +59,6 @@ class Footer extends Component {
               <FooterHeader>Support</FooterHeader>
               {this.state.tab2on && (
                 <FooterLink> 
-                  <a href="#">headphones</a>
                   <a href="#">product help</a>
                   <a href="#">service & warranty</a>
                   <a href="#">register your beats</a>
