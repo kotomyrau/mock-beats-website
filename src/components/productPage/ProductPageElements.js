@@ -4,7 +4,7 @@ export const ProductsContainer = styled.div`
 `
 export const ProductsGridContainer = styled.div`
     display: grid;
-    grid-gap: 8px;
+    grid-gap: 2vh 2vw;
     grid-template-areas:
         "product product product"
         "product product product"
@@ -17,11 +17,25 @@ export const ProductsGridContainer = styled.div`
 export const ProductCard = styled.div`
 grid-area: product;
 background: pink;
+width: auto;
+height: 100vh;
+margin: auto;
+padding: 4vh 4vw;
+position: relative;
 `   
+export const ProductTextWrapper = styled.h3`
+position: absolute;
+z-index: 999;
+top: 40%;
+
+`
 export const ProductImage = styled.div`
+height: 100%;
+width: auto;
 `
 export const Img = styled.img`
-width: 30px;
+  max-width: 100%;
+  max-height: 100%;
 `
 export const ProductName = styled.h3`
 font-weight: 500;
