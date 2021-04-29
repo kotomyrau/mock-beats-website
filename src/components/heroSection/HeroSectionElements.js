@@ -1,63 +1,41 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-  background-color: ${({darkBg}) => (darkBg ? '#2B2835' : 'none')};
-  height: 80vh;
-  z-index: 0;
-  top: ${({darkBg}) => (darkBg ? '-78px;' : '0vh')};
+  background-color: ${({leftImg}) => (leftImg ? '#2B2835' : 'none')};
+  display: flex;
+  flex-direction: ${({leftImg}) => (leftImg ? 'row' : 'row-reverse')};
   position: relative;
-`
-
-export const HeroGrid = styled.div`
-  display: grid;
-  grid-template-areas: 
-    "col1 col2"
-    ;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  height: 100%;
-  // margin-right: 4vw;
-  margin: 0 6vw;
-
+  top: ${({leftImg}) => (leftImg ? '-78px' : '0')};
 `
 
 export const HeroImgWrapper = styled.div`
-  grid-area: ${({leftImg}) => (leftImg ? 'col1' : 'col2')};
-  margin: ${({leftImg}) => (leftImg ? '0' : 'auto 0')};
-
+  display: inline-block;
+  margin: ${({leftImg}) => (leftImg ? '0 0 -10% 0' : '20vh 6vw 0 0')};
+  width: ${({leftImg}) => (leftImg ? '60vw' : '50vw')};
 `
-
 
 export const HeroImg = styled.img`
-  // background-color: red;
-  // height: 99vh;
-  // width: 60vw;
-  position: ${({leftImg}) => (leftImg ? 'absolute' : 'relative')};
-  top: ${({leftImg}) => (leftImg ? '0' : 'none')};
-  z-index: 0;
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
 `
-export const HeroTextWrapper = styled.div`
-  // grid-area: text;
-  grid-area: ${({leftImg}) => (leftImg ? 'col2' : 'col1')};
-  color:  ${({lightText}) => (lightText ? '#FFFFFF' : '#2B2835')};
-  margin: auto 0vw auto 0vw;
+export const HeroTextWrapper = styled.div`  
+  color:  ${({leftImg}) => (leftImg ? '#FFFFFF' : '#2B2835')};
+  display: inline-block;
+  margin: ${({leftImg}) => (leftImg ? 'auto 0vw auto -10vw' : '20vh 0vw 4vh 6vw')};
   padding: 0 0 0vh;
-  // text-align: left;
-  `
-  export const HeroSubHeader = styled.h3`
-  font-weight: 500;
+  width: 35vw;
+`
+export const HeroSubHeader = styled.h3`
   font-size: 16px;
+  font-weight: 500;
   margin: 0;
 `
 export const HeroHeader = styled.h1`
+  font-size: ${({leftImg}) => (leftImg ? '40px' : '50px')};
   font-weight: bold;
-  font-size: ${({darkBg}) => (darkBg ? '40px' : '50px')};
   margin: 1vh 0 2vh;
 `
-export const HeroColors = styled.div`
-
-`
-
 export const ColorHeader = styled.h3`
   font-size: 40px;
   font-weight: 400;
@@ -67,61 +45,57 @@ export const FindColor = styled.p`
 
 `
 export const ColorOptions = styled.div`
-display: ${({colorOptions}) => colorOptions ? 'block' : 'none'};
-margin: 0 0 4vh;
+  display: ${({colorOptions}) => colorOptions ? 'block' : 'none'};
+  margin: 0 0 4vh;
 `
 
-
 export const HeroDetails = styled.div`
-height: auto;
+  height: auto;
 `
 export const ProductPrice = styled.h6`
   font-size: 40px;
   font-weight: 400;
   display: inline-block;
-  margin: 0 2vw 0 0 ;
-
-
+  line-height: 41px;
+  margin: 0 2vw 0 0;
+  vertical-align: middle;
 `
-export const ProductButton = styled.button`
+export const ProductButton = styled.div`
 display: inline-block;
 
 `
 export const HeroOffer = styled.p`
+  color: ${({leftImg}) => leftImg ? '#FFC700' : 'rgba(0, 0, 0, 0.52)'};
   font-size: 13px;
-  color: ${({darkBg}) => darkBg ? '#FFC700' : 'rgba(0, 0, 0, 0.52)'};
   font-weight: 500;
 `
 export const ColorOption1 = styled.div`
-  height: 4.6vh;
-  width: 2.5vw;
   background-color: #FFFFFF;
+  border: 1px solid #000000;
   border-radius: 50px;
   cursor: pointer;
-  border: 1px solid black;
   display: inline-block;
+  height: 30px;
   margin-right:1vw;
-  }
+  width: 30px;
 `
 
 export const ColorOption2 = styled.div`
-  height: 4.6vh;
-  width: 2.5vw;
   background-color: #DD5656;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
+  height: 30px;
   margin-right:1vw;
-  }
+  width: 30px;
 `
 
 export const ColorOption3 = styled.div`
-  height: 4.6vh;
-  width: 2.5vw;
   background-color: #000000;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
+  height: 30px;
   margin-right:1vw;
-  }
+  width: 30px;
 `

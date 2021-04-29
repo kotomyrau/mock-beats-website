@@ -1,20 +1,16 @@
 import React from 'react';
-import { HeroContainer, HeroGrid, HeroImgWrapper, HeroImg, HeroTextWrapper, HeroSubHeader, HeroHeader, HeroColors, ColorHeader, FindColor, ColorOptions, ColorOption1, ColorOption2, ColorOption3, HeroDetails, ProductPrice, ProductButton, HeroOffer} from './HeroSectionElements';
-import headphones from '../../images/studio3wireless.png';
+import { HeroContainer, HeroImgWrapper, HeroImg, HeroTextWrapper, HeroSubHeader, HeroHeader, ColorHeader, FindColor, ColorOptions, ColorOption1, ColorOption2, ColorOption3, HeroDetails, ProductPrice, ProductButton, HeroOffer} from './HeroSectionElements';
 import "../../components/buttons/buttons.css"
-const HeroSection = ({id, leftImg, darkBg, img, lightText, width, header, subHeader, colorHeader, findColor, colorOptions, productPrice, productOffer}) => {
+
+const HeroSection = ({id, leftImg, img, alt, header, subHeader, colorHeader, findColor, colorOptions, productPrice, productOffer}) => {
   return (
-    <HeroContainer id={id} darkBg={darkBg} lightText={lightText}>
-      <HeroGrid>
-      {/* COLUMN 1 */}
+    <HeroContainer id={id} leftImg={leftImg}>
       <HeroImgWrapper leftImg={leftImg}>
-        <HeroImg leftImg={leftImg} src={img} alt="black beats headphones" width={width} />
+        <HeroImg src={img} alt={alt}/>
       </HeroImgWrapper>
-      {/* COLUMN 2 */}
-      <HeroTextWrapper lightText={lightText} leftImg={leftImg}>
+      <HeroTextWrapper leftImg={leftImg}>
         <HeroSubHeader>{subHeader}</HeroSubHeader>
-        <HeroHeader darkBg={darkBg}>{header}</HeroHeader>
-        <HeroColors> 
+        <HeroHeader leftImg={leftImg}>{header}</HeroHeader>
           <ColorHeader>{colorHeader}</ColorHeader>
           <FindColor>{findColor}</FindColor>
           <ColorOptions colorOptions={colorOptions}>
@@ -22,15 +18,15 @@ const HeroSection = ({id, leftImg, darkBg, img, lightText, width, header, subHea
             <ColorOption2/>
             <ColorOption3/>
           </ColorOptions>
-        </HeroColors>
         <HeroDetails>
         <ProductPrice>${productPrice}</ProductPrice>
-        <ProductButton className="buy-btn">buy now</ProductButton>
+        <ProductButton>
+          <button id={id} to='#'>buy now</button>
+        </ProductButton>
         </HeroDetails>
-      <HeroOffer darkBg={darkBg}> {productOffer}</HeroOffer>
-      </HeroTextWrapper>
-      </HeroGrid>
-    </HeroContainer>
+      <HeroOffer leftImg={leftImg}> {productOffer}</HeroOffer>
+    </HeroTextWrapper>
+  </HeroContainer>
   )
 }
 

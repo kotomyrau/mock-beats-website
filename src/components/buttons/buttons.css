@@ -1,18 +1,13 @@
-.buy-btn {
-  width: 12vw;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 50px;
-  height: 40px;
-  border: none;
+#hero1 button {
+  background-color: #FFC700;
+  color: #000000;
 }
-
 button {
   background-color: #000000;
   border: none;
   border-radius: 50px;
   color: #FFFFFF;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   height: 41px;
