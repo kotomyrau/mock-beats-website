@@ -1,44 +1,92 @@
-import React from 'react'
-import { FooterContainer, FooterGrid, FooterLogo, FooterImg, SiteMapProducts, SiteMapSupport, SiteMapCompany, FooterSocials, FooterHeader, FooterLink, SocialMediaLink} from './FooterElements'
+import React, {Component}  from 'react'
+import { FooterContainer, FooterGrid, FooterLogo, FooterImg, SiteMapProducts, FooterTab, SiteMapSupport, SiteMapCompany, FooterSocials, FooterHeader, FooterLink, SocialMediaLink} from './FooterElements'
 import logo from "../../images/logo.png";
 import { FaInstagram, FaFacebookF, FaTwitter, FaWhatsapp} from 'react-icons/fa';
-const Footer = () => {
-  return (
-    <FooterContainer>
+
+// const Footer = () => {
+//   return (
+
+class Footer extends Component {
+  // initial state
+  state = {
+    tab1on: false,
+    tab2on: false,
+    tab3on: true,
+  }
+
+  //  set opposite state of "on" to "on"
+  toggle1 = () => {
+    this.setState({
+      tab1on: !this.state.tab1on
+    })
+  }
+
+  toggle2 = () => {
+    this.setState({
+      tab2on: !this.state.tab2on
+    })
+  }
+
+  toggle3= () => {
+    this.setState({
+      tab3on: !this.state.tab3on
+    })
+  }
+  render() {
+    return (
+      <FooterContainer>
       <FooterGrid>
         <FooterLogo>
           <FooterImg src={logo} alt="beats logo"/>        
         </FooterLogo>
         <SiteMapProducts>
-          <FooterHeader>Products</FooterHeader>
-            <FooterLink  href="#">headphones</FooterLink>
-            <FooterLink  href="#">earphones</FooterLink>
-            <FooterLink  href="#">speakers</FooterLink>
-            <FooterLink  href="#">accessories</FooterLink>
-            <FooterLink  href="#">collaborations</FooterLink>
-            <FooterLink  href="#">beatsaudio</FooterLink>
-            <FooterLink  href="#">special offers</FooterLink>
+          <FooterTab onClick={this.toggle1}>
+            <FooterHeader>Products</FooterHeader>
+              {this.state.tab1on && (
+              <FooterLink> 
+                <a href="#">headphones</a>
+                <a href="#">earphones</a>
+                <a href="#">speakers</a>
+                <a href="#">accessories</a>
+                <a href="#">collaborations</a>
+                <a href="#">beatsaudio</a>
+                <a href="#">special offers</a>
+              </FooterLink>
+            )}
+          </FooterTab>
         </SiteMapProducts>
         <SiteMapSupport>
-          <FooterHeader>Support</FooterHeader>
-            <FooterLink  href="#">headphones</FooterLink>
-            <FooterLink  href="#">product help</FooterLink>
-            <FooterLink  href="#">service & warranty</FooterLink>
-            <FooterLink  href="#">register your beats</FooterLink>
-            <FooterLink  href="#">update your beats</FooterLink>
-            <FooterLink  href="#">authorized service providers</FooterLink>
-            <FooterLink  href="#">contact support</FooterLink>
-            <FooterLink  href="#">international numbers</FooterLink>
+          <FooterTab onClick={this.toggle2}>
+            <FooterHeader>Support</FooterHeader>
+            {this.state.tab2on && (
+              <FooterLink> 
+                <a href="#">headphones</a>
+                <a href="#">product help</a>
+                <a href="#">service & warranty</a>
+                <a href="#">register your beats</a>
+                <a href="#">update your beats</a>
+                <a href="#">authorized service providers</a>
+                <a href="#">contact support</a>
+                <a href="#">international numbers</a>
+              </FooterLink>
+            )}
+          </FooterTab>
         </SiteMapSupport>
         <SiteMapCompany>
-          <FooterHeader>Company</FooterHeader>
-            <FooterLink  href="#">product help</FooterLink>
-            <FooterLink  href="#">news and events</FooterLink>
-            <FooterLink  href="#">promotion terms</FooterLink>
-            <FooterLink  href="#">privacy policy</FooterLink>
-            <FooterLink  href="#">trademark</FooterLink>
-            <FooterLink  href="#">terms of use</FooterLink>
-            <FooterLink  href="#">cookies</FooterLink>
+          <FooterTab onClick={this.toggle3}>
+            <FooterHeader>Company</FooterHeader>
+            {this.state.tab3on && (
+              <FooterLink> 
+                <a href="#">product help</a>
+                <a href="#">news and events</a>
+                <a href="#">promotion terms</a>
+                <a href="#">privacy policy</a>
+                <a href="#">trademark</a>
+                <a href="#">terms of use</a>
+                <a href="#">cookies</a>
+              </FooterLink>
+            )}
+            </FooterTab>
         </SiteMapCompany>
         <FooterSocials>
           <FooterHeader>Follow Us</FooterHeader>
@@ -49,7 +97,11 @@ const Footer = () => {
         </FooterSocials>
       </FooterGrid>
     </FooterContainer>
-  )
-}
+      
+          )
+        }
+      }
+//   )
+// }
 
 export default Footer

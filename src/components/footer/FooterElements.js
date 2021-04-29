@@ -19,19 +19,24 @@ export const FooterLogo = styled.div`
 export const FooterImg = styled.img`
   height: 50px;
 `
-export const SiteMapProducts = styled.ul`
+export const SiteMapProducts = styled.div`
   grid-area: col2;
   margin: 0;
 `
-export const SiteMapSupport = styled.ul`
+export const FooterTab = styled.div`
+  background-color: pink;
+
+`
+
+export const SiteMapSupport = styled.div`
   grid-area: col3;
   margin: 0;
 `
-export const SiteMapCompany = styled.ul`
+export const SiteMapCompany = styled.div`
   grid-area: col4;  
   margin: 0;
 `
-export const FooterSocials = styled.ul`
+export const FooterSocials = styled.div`
   grid-area: col5;
   margin: 0;
 `
@@ -40,9 +45,12 @@ export const FooterHeader = styled.h4`
   font-size: 24px;
   margin: 0 0 2vh; 
 `
-export const FooterLink = styled.a` 
+export const FooterLink = styled.ul` 
+display: flex;
+    flex-direction: column;
+    padding: 0;
   color: #B8B8B8;
-  display: block;
+  // display: block;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.8;
