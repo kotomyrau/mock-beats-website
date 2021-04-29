@@ -6,12 +6,19 @@ export const HeroContainer = styled.div`
   flex-direction: ${({leftImg}) => (leftImg ? 'row' : 'row-reverse')};
   position: relative;
   top: ${({leftImg}) => (leftImg ? '-78px' : '0')};
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `
+
 
 export const HeroImgWrapper = styled.div`
   display: inline-block;
   margin: ${({leftImg}) => (leftImg ? '0 0 -10% 0' : '20vh 6vw 0 0')};
   width: ${({leftImg}) => (leftImg ? '60vw' : '50vw')};
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+  }
 `
 
 export const HeroImg = styled.img`
@@ -24,25 +31,36 @@ export const HeroTextWrapper = styled.div`
   display: inline-block;
   margin: ${({leftImg}) => (leftImg ? 'auto 0vw auto -10vw' : '20vh 0vw 4vh 6vw')};
   padding: 0 0 0vh;
-  width: 35vw;
+  width: 45vw;
+  @media screen and (max-width: 1024px) {
+    margin: auto 0vw auto -10vw;
+    width: 55vw;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0vh 0vw -24vh 0vw;
+    width: 100vw;
+    color: #2B2835;
+  }
 `
-export const HeroSubHeader = styled.h3`
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
+export const HeroSubHeader = styled.h6`
+  color: #FFFFFF;
+  @media screen and (max-width: 768px) {
+    color: #2B2835;
+  }
 `
 export const HeroHeader = styled.h1`
   font-size: ${({leftImg}) => (leftImg ? '40px' : '50px')};
-  font-weight: bold;
   margin: 1vh 0 2vh;
+  @media screen and (max-width: 1024px) {
+    font-size: 32px;
+  }
 `
 export const ColorHeader = styled.h3`
-  font-size: 40px;
-  font-weight: 400;
-  margin: 0;
+  color: #000000;
 `
 export const FindColor = styled.p`
-
+  color: #2B2835;
+  font-size 16px;
 `
 export const ColorOptions = styled.div`
   display: ${({colorOptions}) => colorOptions ? 'block' : 'none'};
@@ -52,9 +70,7 @@ export const ColorOptions = styled.div`
 export const HeroDetails = styled.div`
   height: auto;
 `
-export const ProductPrice = styled.h6`
-  font-size: 40px;
-  font-weight: 400;
+export const ProductPrice = styled.h3`
   display: inline-block;
   line-height: 41px;
   margin: 0 2vw 0 0;
@@ -68,6 +84,7 @@ export const HeroOffer = styled.p`
   color: ${({leftImg}) => leftImg ? '#FFC700' : 'rgba(0, 0, 0, 0.52)'};
   font-size: 13px;
   font-weight: 500;
+  margin-top: 2vh;
 `
 export const ColorOption1 = styled.div`
   background-color: #FFFFFF;

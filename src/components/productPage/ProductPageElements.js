@@ -12,6 +12,18 @@ export const ProductsGridContainer = styled.div`
     ; 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
+  @media screen and (max-width: 768px) {
+    // grid-gap: 4vh 2vw;
+    grid-template-areas:
+      "product"
+      "product"
+      "..."
+      ; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
 `
 export const ProductCard = styled.div`
   display: flex;
@@ -22,8 +34,12 @@ export const ProductCard = styled.div`
   padding: 4vh 4vw;
   position: relative;
   width: auto;
+
+  @media screen and (max-width: 768px) {
+  height: fit-content;
+}
 `   
-export const ProductTextWrapper = styled.h3`
+export const ProductTextWrapper = styled.div`
   height: fit-content;
   margin: 100% 0 0vh;
   z-index: 1;
@@ -32,30 +48,29 @@ export const ProductImage = styled.div`
   height: auto;
   margin: 0 6vw;
   position: absolute;
+
+  @media screen and (max-width: 768px) {
+    margin: 4vh 18vw;
+  }
 `
 export const Img = styled.img`
   max-width: 100%;
   max-height: 100%;
 `
-export const ProductName = styled.h3`
+export const ProductName = styled.h1`
   color: #2B2835;
   font-weight: 500;
-  font-size: 50px;
   margin: 8vh 0 1vh;
 `
 export const ProductFeatures = styled.p`
   color: #030303;
-  font-size: 14px;
-  font-weight: 400;
   margin: 0 0 2vh;
 `
-export const ProductPrice = styled.h6`
+export const ProductPrice = styled.h4`
   color: #9D8220;
   display: inline-block;
   font-size: 25px;
-  font-weight: 600;
   line-height: 41px;
-  margin: 0 0 0;
 `
 export const ProductButton = styled.div`
   display: inline-block;
