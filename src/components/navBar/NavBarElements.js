@@ -27,11 +27,15 @@ export const NavMenu = styled.div`
   margin: auto 0;
   @media screen and (max-width: 768px) {
     display: none;
-  }`
+  }
+`
 
 export const NavItem = styled.div`
   display: inline-block;
   margin: 0 4vw;
+  @media screen and (max-width: 1100px) {
+    margin: 0 1.8vw;
+  }
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -50,7 +54,7 @@ export const NavIcons = styled.div`
   }`
 
 export const IconImg = styled.img`
-  padding: 0 18px;
+  padding: 0 1vw;
   height: 20px;
 `
 
