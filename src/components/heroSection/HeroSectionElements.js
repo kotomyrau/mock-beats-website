@@ -26,23 +26,19 @@ export const HeroTextWrapper = styled.div`
   padding: 0 0 0vh;
   width: 35vw;
 `
-export const HeroSubHeader = styled.h3`
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0;
+export const HeroSubHeader = styled.h6`
+  color: #FFFFFF;
 `
 export const HeroHeader = styled.h1`
   font-size: ${({leftImg}) => (leftImg ? '40px' : '50px')};
-  font-weight: bold;
   margin: 1vh 0 2vh;
 `
 export const ColorHeader = styled.h3`
-  font-size: 40px;
-  font-weight: 400;
-  margin: 0;
+  color: #000000;
 `
 export const FindColor = styled.p`
-
+  color: #2B2835;
+  font-size 16px;
 `
 export const ColorOptions = styled.div`
   display: ${({colorOptions}) => colorOptions ? 'block' : 'none'};
@@ -52,9 +48,7 @@ export const ColorOptions = styled.div`
 export const HeroDetails = styled.div`
   height: auto;
 `
-export const ProductPrice = styled.h6`
-  font-size: 40px;
-  font-weight: 400;
+export const ProductPrice = styled.h3`
   display: inline-block;
   line-height: 41px;
   margin: 0 2vw 0 0;

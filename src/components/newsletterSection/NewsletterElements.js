@@ -11,13 +11,9 @@ export const FormWrapper = styled.div`
 
 export const FormHeader = styled.h1`
   color: #2B2835;
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
 `
 export const FormSubheader = styled.p`
-  font-size: 14px;
-  font-weight: 400;
+  color: #030303;
   margin: 2vh 0;
 `
 export const FormContainer = styled.div`

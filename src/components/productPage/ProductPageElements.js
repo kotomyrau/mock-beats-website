@@ -23,7 +23,7 @@ export const ProductCard = styled.div`
   position: relative;
   width: auto;
 `   
-export const ProductTextWrapper = styled.h3`
+export const ProductTextWrapper = styled.div`
   height: fit-content;
   margin: 100% 0 0vh;
   z-index: 1;
@@ -37,25 +37,20 @@ export const Img = styled.img`
   max-width: 100%;
   max-height: 100%;
 `
-export const ProductName = styled.h3`
+export const ProductName = styled.h1`
   color: #2B2835;
   font-weight: 500;
-  font-size: 50px;
   margin: 8vh 0 1vh;
 `
 export const ProductFeatures = styled.p`
   color: #030303;
-  font-size: 14px;
-  font-weight: 400;
   margin: 0 0 2vh;
 `
-export const ProductPrice = styled.h6`
+export const ProductPrice = styled.h4`
   color: #9D8220;
   display: inline-block;
   font-size: 25px;
-  font-weight: 600;
   line-height: 41px;
-  margin: 0 0 0;
 `
 export const ProductButton = styled.div`
   display: inline-block;

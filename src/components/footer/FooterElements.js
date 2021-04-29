@@ -35,10 +35,9 @@ export const FooterSocials = styled.ul`
   grid-area: col5;
   margin: 0;
 `
-export const FooterHeader = styled.h6` 
+export const FooterHeader = styled.h4` 
   color: #FFFFFF;
   font-size: 24px;
-  font-weight: 600;
   margin: 0 0 2vh; 
 `
 export const FooterLink = styled.a` 
