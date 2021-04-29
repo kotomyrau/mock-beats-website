@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
-  background-color: ${({leftImg}) => (leftImg ? '#2B2835' : 'none')};
+  background-color: ${({leftImg}) => (leftImg ? '#2B2835' : '#FFFFFF')};
   display: flex;
   flex-direction: ${({leftImg}) => (leftImg ? 'row' : 'row-reverse')};
   position: relative;
@@ -19,8 +19,9 @@ export const HeroImgWrapper = styled.div`
   width: ${({leftImg}) => (leftImg ? '60vw' : '50vw')};
   @media screen and (max-width: 768px) {
     width: 100vw;
-    background-color: ${({leftImg}) => (leftImg ? '#2B2835' : 'none')};
+    background-color: ${({leftImg}) => (leftImg ? '#2B2835' : '#FFFFFF')};
     padding: 0 4vw;
+    margin: auto 0;
   }
 `
 
@@ -28,7 +29,7 @@ export const HeroImg = styled.img`
   max-width: 100%;
   max-height: 100%;
   position: relative;
-  margin-bottom: -20%;
+  margin-bottom:  ${({leftImg}) => (leftImg ? '-20%' : '0')};;
 `
 export const HeroTextWrapper = styled.div`  
   color:  ${({leftImg}) => (leftImg ? '#FFFFFF' : '#2B2835')};
@@ -37,13 +38,14 @@ export const HeroTextWrapper = styled.div`
   padding: 0 0 0vh;
   width: 45vw;
   @media screen and (max-width: 1024px) {
-    margin: auto 0vw auto -10vw;
+    // margin: ${({leftImg}) => (leftImg ? 'auto 0vw auto -10vw' : '20vh 0vw 4vh 6vw')};
     width: 55vw;
   }
   @media screen and (max-width: 768px) {
-    margin: 30% 8vw 0;
+    margin: ${({leftImg}) => (leftImg ? '20% 0' : '4vh 0')};
     width: 100vw;
     color: #2B2835;
+    padding: 0 8vw;
   }
 `
 export const HeroSubHeader = styled.h6`
@@ -65,10 +67,12 @@ export const ColorHeader = styled.h3`
 export const FindColor = styled.p`
   color: #2B2835;
   font-size 16px;
+  margin: 2vh 0;
 `
 export const ColorOptions = styled.div`
   display: ${({colorOptions}) => colorOptions ? 'block' : 'none'};
   margin: 0 0 4vh;
+  height: 40px;
 `
 
 export const HeroDetails = styled.div`
@@ -100,9 +104,14 @@ export const ColorOption1 = styled.div`
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
+  height: 100%;
   margin-right:1vw;
-  width: 30px;
+  width: 40px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 4vw;
+  }
+  
 `
 
 export const ColorOption2 = styled.div`
@@ -110,9 +119,14 @@ export const ColorOption2 = styled.div`
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
+  height: 100%;
   margin-right:1vw;
-  width: 30px;
+  width: 40px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 4vw;
+  }
+  
 `
 
 export const ColorOption3 = styled.div`
@@ -120,7 +134,12 @@ export const ColorOption3 = styled.div`
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
-  height: 30px;
+  height: 100%;
   margin-right:1vw;
-  width: 30px;
+  width: 40px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: vw;
+  }
+  
 `

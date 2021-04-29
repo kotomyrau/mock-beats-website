@@ -6,7 +6,7 @@ const HeroSection = ({id, leftImg, img, alt, header, subHeader, colorHeader, fin
   return (
     <HeroContainer id={id} leftImg={leftImg}>
       <HeroImgWrapper leftImg={leftImg}>
-        <HeroImg src={img} alt={alt}/>
+        <HeroImg leftImg={leftImg} src={img} alt={alt}/>
       </HeroImgWrapper>
       <HeroTextWrapper leftImg={leftImg}>
         <HeroSubHeader>{subHeader}</HeroSubHeader>
