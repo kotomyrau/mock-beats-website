@@ -16,13 +16,14 @@ export const HeroGrid = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   height: 100%;
-  margin-right: 4vw;
+  // margin-right: 4vw;
+  margin: 0 6vw;
 
 `
 
 export const HeroImgWrapper = styled.div`
   grid-area: ${({leftImg}) => (leftImg ? 'col1' : 'col2')};
-  margin: ${({leftImg}) => (leftImg ? '0' : 'auto 0vw 8vh 6vw')};
+  margin: ${({leftImg}) => (leftImg ? '0' : 'auto 0')};
 
 `
 
@@ -39,8 +40,9 @@ export const HeroTextWrapper = styled.div`
   // grid-area: text;
   grid-area: ${({leftImg}) => (leftImg ? 'col2' : 'col1')};
   color:  ${({lightText}) => (lightText ? '#FFFFFF' : '#2B2835')};
-  margin: auto 0vw 0 6vw;
-  padding: 0 0 8vh;
+  margin: auto 0vw auto 0vw;
+  padding: 0 0 0vh;
+  // text-align: left;
   `
   export const HeroSubHeader = styled.h3`
   font-weight: 500;
