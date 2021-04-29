@@ -2,47 +2,65 @@ import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
   background-color: ${({darkBg}) => (darkBg ? '#2B2835' : 'none')};
-  height: 80vh;
-  z-index: 0;
-  top: ${({darkBg}) => (darkBg ? '-78px;' : '0vh')};
+  // // height: 80vh;
+  // // z-index: 0;
+  // // top: ${({darkBg}) => (darkBg ? '-78px;' : '0vh')};
+  // // position: relative;
+
   position: relative;
+  top: -78px;
+  display: flex;
 `
 
 export const HeroGrid = styled.div`
-  display: grid;
-  grid-template-areas: 
-    "col1 col2"
-    ;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  height: 100%;
-  // margin-right: 4vw;
-  margin: 0 6vw;
+  // display: grid;
+  // grid-template-areas: 
+  //   "col1 col2"
+  //   ;
+  // grid-template-columns: 1fr 1fr;
+  // grid-template-rows: 1fr;
+  // height: 100%;
+  // // margin-right: 4vw;
+  // margin: 0 6vw;
 
 `
 
 export const HeroImgWrapper = styled.div`
-  grid-area: ${({leftImg}) => (leftImg ? 'col1' : 'col2')};
-  margin: ${({leftImg}) => (leftImg ? '0' : 'auto 0')};
+  // grid-area: ${({leftImg}) => (leftImg ? 'col1' : 'col2')};
+  // margin: ${({leftImg}) => (leftImg ? '0' : 'auto 0')};
 
-`
+
+  width: 50vw;
+  display: inline-block;
+  margin-bottom: -10%;
+  `
 
 
 export const HeroImg = styled.img`
-  // background-color: red;
-  // height: 99vh;
-  // width: 60vw;
-  position: ${({leftImg}) => (leftImg ? 'absolute' : 'relative')};
-  top: ${({leftImg}) => (leftImg ? '0' : 'none')};
-  z-index: 0;
+  // // background-color: red;
+  // // height: 99vh;
+  // // width: 60vw;
+  // position: ${({leftImg}) => (leftImg ? 'absolute' : 'relative')};
+  // top: ${({leftImg}) => (leftImg ? '0' : 'none')};
+  // z-index: 0;
+
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
 `
 export const HeroTextWrapper = styled.div`
-  // grid-area: text;
-  grid-area: ${({leftImg}) => (leftImg ? 'col2' : 'col1')};
-  color:  ${({lightText}) => (lightText ? '#FFFFFF' : '#2B2835')};
-  margin: auto 0vw auto 0vw;
-  padding: 0 0 0vh;
-  // text-align: left;
+  // // grid-area: text;
+  // grid-area: ${({leftImg}) => (leftImg ? 'col2' : 'col1')};
+  // color:  ${({lightText}) => (lightText ? '#FFFFFF' : '#2B2835')};
+  // margin: auto 0vw auto 0vw;
+  // padding: 0 0 0vh;
+  // // text-align: left;
+
+  color: #FFFFFF;
+    margin: auto 0vw auto 0vw;
+    padding: 0 0 0vh;
+    display: inline-block;
+    width: 50vw;
   `
   export const HeroSubHeader = styled.h3`
   font-weight: 500;
