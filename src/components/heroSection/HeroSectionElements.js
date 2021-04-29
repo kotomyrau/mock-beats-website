@@ -8,6 +8,7 @@ export const HeroContainer = styled.div`
   top: ${({leftImg}) => (leftImg ? '-78px' : '0')};
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    background-color: #FFFFFF;
   }
 `
 
@@ -18,6 +19,8 @@ export const HeroImgWrapper = styled.div`
   width: ${({leftImg}) => (leftImg ? '60vw' : '50vw')};
   @media screen and (max-width: 768px) {
     width: 100vw;
+    background-color: ${({leftImg}) => (leftImg ? '#2B2835' : 'none')};
+    padding: 0 4vw;
   }
 `
 
@@ -25,6 +28,7 @@ export const HeroImg = styled.img`
   max-width: 100%;
   max-height: 100%;
   position: relative;
+  margin-bottom: -20%;
 `
 export const HeroTextWrapper = styled.div`  
   color:  ${({leftImg}) => (leftImg ? '#FFFFFF' : '#2B2835')};
@@ -37,7 +41,7 @@ export const HeroTextWrapper = styled.div`
     width: 55vw;
   }
   @media screen and (max-width: 768px) {
-    margin: 0vh 0vw -24vh 0vw;
+    margin: 30% 8vw 0;
     width: 100vw;
     color: #2B2835;
   }
@@ -85,6 +89,10 @@ export const HeroOffer = styled.p`
   font-size: 13px;
   font-weight: 500;
   margin-top: 2vh;
+
+  @media screen and (max-width: 768px) {
+    color: rgba(0, 0, 0, 0.52);
+  }
 `
 export const ColorOption1 = styled.div`
   background-color: #FFFFFF;
