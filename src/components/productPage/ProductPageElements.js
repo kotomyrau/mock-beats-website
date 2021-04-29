@@ -12,6 +12,18 @@ export const ProductsGridContainer = styled.div`
     ; 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+
+  @media screen and (max-width: 768px) {
+    // grid-gap: 4vh 2vw;
+    grid-template-areas:
+      "product"
+      "product"
+      "..."
+      ; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
 `
 export const ProductCard = styled.div`
   display: flex;
@@ -22,6 +34,10 @@ export const ProductCard = styled.div`
   padding: 4vh 4vw;
   position: relative;
   width: auto;
+
+  @media screen and (max-width: 768px) {
+  height: fit-content;
+}
 `   
 export const ProductTextWrapper = styled.div`
   height: fit-content;
@@ -32,6 +48,10 @@ export const ProductImage = styled.div`
   height: auto;
   margin: 0 6vw;
   position: absolute;
+
+  @media screen and (max-width: 768px) {
+    margin: 4vh 18vw;
+  }
 `
 export const Img = styled.img`
   max-width: 100%;
