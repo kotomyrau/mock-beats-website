@@ -1,10 +1,8 @@
 export const heroPage1 = {
   id: 'hero1',
-  darkBg: true,
-  lightText: true,
   leftImg: true,
   img: require('../../images/studio3wireless.png').default,
-  width: '864',
+  alt: "black beats headphones",
 
   header: 'Experience your music \n like never before.',
   subHeader: 'Beats Studio3 Wireless',
@@ -16,12 +14,10 @@ export const heroPage1 = {
 }
 
 export const heroPage2 = {
-  id: 'hero1',
-  darkBg: false,
-  lightText: false,
+  id: 'hero2',
   leftImg: false,
   img: require('../../images/pill.png').default,
-  width: '740',
+  alt: "white beats pill speakers",
 
   header: 'Beats Pill+',
   subHeader: 'Portable Wireless Speaker',
