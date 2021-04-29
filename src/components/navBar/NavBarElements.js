@@ -45,11 +45,7 @@ export const NavItem = styled.div`
   }
 `
 export const NavLink = styled(Link)`
-  color: #FFFFFF;
   font-size: 15px;
-  font-weight: 500;
-  text-decoration: none;
-  text-transform: uppercase;
 `
 export const NavIcons = styled.div`
   margin: auto 0;
