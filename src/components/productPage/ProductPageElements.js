@@ -35,6 +35,10 @@ export const ProductCard = styled.div`
   position: relative;
   width: auto;
 
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
+
   @media screen and (max-width: 768px) {
   height: fit-content;
 }
@@ -69,10 +73,23 @@ export const ProductFeatures = styled.p`
 export const ProductPrice = styled.h4`
   color: #9D8220;
   display: inline-block;
+  float: left;
   font-size: 25px;
   line-height: 41px;
+  @media screen and (max-width: 1024px) {
+    float: none;
+  }
+  @media screen and (max-width: 768px) {
+    float: left;
+  }
 `
 export const ProductButton = styled.div`
   display: inline-block;
   float: right;
+  @media screen and (max-width: 1024px) {
+    float: none;
+  }
+  @media screen and (max-width: 768px) {
+    float: right;
+  }
 `
