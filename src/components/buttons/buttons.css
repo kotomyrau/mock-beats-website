@@ -15,5 +15,6 @@ button {
   width: 145px;
   @media screen and (max-width: 1024px) {
     height: 36px;
+    width: 140px;
   }
 }
