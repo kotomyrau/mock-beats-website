@@ -1,9 +1,9 @@
-[
+export const ProductData = [
     {
       "id": 1,
       "name": "Beatsˣ",
       "price": "299.95",
-      "image": "./images/product0.png",
+      "image": require("./images/product0.png").default,
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 
@@ -16,7 +16,7 @@
       "id": 2,
       "name": "Beatsˣ",
       "price": "199.95",
-      "image": "images/product1.png",
+      "image": require("./images/product1.png").default,
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 
@@ -29,7 +29,7 @@
       "id": 3,
       "name": "Beatsˣ",
       "price": "199.95",
-      "image": "images/product2.png",
+      "image": require("./images/product2.png").default,
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 
@@ -42,7 +42,7 @@
       "id": 4,
       "name": "Beatsˣ",
       "price": "999.95",
-      "image": "images/product3.png",
+      "image": require("./images/product3.png").default,
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 
@@ -55,7 +55,7 @@
       "id": 5,
       "name": "Beatsˣ",
       "price": "99.95",
-      "image": "images/product4.png",
+      "image": require("./images/product4.png").default,
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 
@@ -67,7 +67,7 @@
       "id": 6,
       "name": "Beatsˣ",
       "price": "299.95",
-      "image": "images/product5.png",
+      "image": require("./images/product5.png").default,
       "features": [
         {
           "battery": "Up to 8 hours of battery life", 

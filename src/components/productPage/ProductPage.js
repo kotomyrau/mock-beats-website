@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import ProductData from '../../data/products.json'
+import React from 'react'
+import { ProductData } from '../../data/products.js'
 import { ProductsContainer,ProductsGridContainer, ProductCard, ProductImage, Img, ProductName, ProductFeatures, ProductPrice} from './ProductPageElements'
 
-class ProductPage extends Component {
+class ProductPage extends React.Component {
 
   render() {    
     return (
