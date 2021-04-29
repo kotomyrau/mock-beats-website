@@ -3,6 +3,9 @@ import styled from 'styled-components'
 export const NewsletterContainer = styled.div`
   text-align: center;
   margin: 14vh 0;
+  @media screen and (max-width: 768px) {
+    margin: 14vh 8vw;
+  }
 `
 export const FormWrapper = styled.div`
   margin: 0 auto;
