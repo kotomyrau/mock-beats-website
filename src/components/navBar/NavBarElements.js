@@ -25,11 +25,16 @@ export const Img = styled.img`
 export const NavMenu = styled.div`
   height: fit-content;
   margin: auto 0;
-`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }`
 
 export const NavItem = styled.div`
   display: inline-block;
   margin: 0 4vw;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 export const NavLink = styled(Link)`
   color: #FFFFFF;
@@ -40,7 +45,9 @@ export const NavLink = styled(Link)`
 `
 export const NavIcons = styled.div`
   margin: auto 0;
-`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }`
 
 export const IconImg = styled.img`
   padding: 0 18px;

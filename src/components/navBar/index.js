@@ -5,9 +5,10 @@ import search from "../../images/search.png";
 import profile from "../../images/profile.png";
 import buy from "../../images/buy.png";
 import {FaBars} from 'react-icons/fa';
+
 // import { animateScroll as scroll } from 'react-scroll';
 
-const NavBar = (toggle) => {
+const NavBar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
