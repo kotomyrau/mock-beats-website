@@ -9,7 +9,7 @@ const HeroSection = ({id, leftImg, img, alt, header, headerSup, subHeader, color
         <HeroImg leftImg={leftImg} src={img} alt={alt}/>
       </HeroImgWrapper>
       <HeroTextWrapper leftImg={leftImg}>
-        <HeroSubHeader>{subHeader}</HeroSubHeader>
+        <HeroSubHeader leftImg={leftImg}>{subHeader}</HeroSubHeader>
         <HeroHeader leftImg={leftImg}>{header}<sup>{headerSup}</sup></HeroHeader>
           <ColorHeader>{colorHeader}</ColorHeader>
           <FindColor>{findColor}</FindColor>

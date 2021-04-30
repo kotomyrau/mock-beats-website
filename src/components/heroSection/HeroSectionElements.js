@@ -48,7 +48,7 @@ export const HeroTextWrapper = styled.div`
   }
 `
 export const HeroSubHeader = styled.h6`
-  color: #FFFFFF;
+  color: ${({leftImg}) => (leftImg ? '#FFFFFF' : '#2B2835')};
   @media screen and (max-width: 768px) {
     color: #2B2835;
   }
