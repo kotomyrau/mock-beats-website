@@ -14,7 +14,6 @@ export const ProductsGridContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
 
   @media screen and (max-width: 768px) {
-    // grid-gap: 4vh 2vw;
     grid-template-areas:
       "product"
       "product"
@@ -50,11 +49,12 @@ export const ProductTextWrapper = styled.div`
 `
 export const ProductImage = styled.div`
   height: auto;
-  margin: 0 6vw;
+  margin: 0 auto;
   position: absolute;
+  width: 55%;
 
   @media screen and (max-width: 768px) {
-    margin: 4vh 18vw;
+    margin: 4vh auto;
   }
 `
 export const Img = styled.img`

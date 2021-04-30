@@ -5,6 +5,7 @@ export const heroPage1 = {
   alt: "black beats headphones",
 
   header: 'Experience your music \n like never before.',
+  headerSup: null,
   subHeader: 'Beats Studio3 Wireless',
   colorHeader: null,
   findColor: null,
@@ -19,7 +20,8 @@ export const heroPage2 = {
   img: require('../../images/pill.png').default,
   alt: "white beats pill speakers",
 
-  header: 'Beats Pill+',
+  header: 'Beats Pill',
+  headerSup: '+',
   subHeader: 'Portable Wireless Speaker',
   colorHeader: 'Available Colors',
   findColor: 'Find your color',
